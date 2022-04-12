@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+{% block head %}
+{% endblock %}
+
+{% block title %}Accueil - Sicily Lines{% endblock %}
+
+{% block content %}
+<h1 class="pageTitle">Sicily lines</h1>
+<div class="container">
+    {{ form_start(form)}}
+
+</div>
+<div class="container-xl">
+    
+        <div class="col-md-12 m-auto">
+        <div class="row justify-content-center">
+            {% for traversee in traversees %}
+                <div class="card m-3" style="width: 18rem;">
+                    <img class="card-img-top" src="{{ asset('assets/images/boatImg.jpg')}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{traversee.getLiaison.portDepart.nom}} -> {{traversee.liaison.portArrivee.nom}}</h5>
+                        <div class="d-flex justify-content-between card-text">
+                            <span class="h5"><b>{{traversee.date | date('j/m/t')}}</b></span>
+                            <span class="h5"><b>{{traversee.heure | date('h')}} h {{traversee.heure | date('m')}}</b></span>
+                        </div>
+                        <p><b>Bateau : {{traversee.bateau.nom}}</b></p>
+                        
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    
+</div>
+{% endblock %}
+    

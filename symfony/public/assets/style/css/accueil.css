@@ -1,0 +1,45 @@
+body{
+    font-family: 'Helvetica', 'Arial', sans-serif !important;
+}
+
+.formDiv
+{
+    
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    
+    max-width: 700px;
+    background-color: rgb(239, 243, 243);
+    border-radius: 30px;
+    box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.507);
+}
+
+.pageTitle
+{
+    font-size: 4rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 100px;
+}
+
+.formGroup
+{
+    margin: 30px;
+}
+
+.formContact
+{
+    width:70%;
+    background-color: rgb(204, 204, 204);
+    box-shadow: 5px 2px 10px grey;
+}
+
+
+
+.card p
+{
+    font-size: 1.3rem;
+}

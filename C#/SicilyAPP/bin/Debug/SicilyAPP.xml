@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SicilyAPP</name>
+    </assembly>
+    <members>
+        <member name="M:SicilyAPP.DAL.ConnectionSql.getInstance(System.String,System.String,System.String,System.String)">
+            méthode de création d'une instance de connexion si elle n'existe pas (singleton)
+        </member>
+        <member name="M:SicilyAPP.DAL.ConnectionSql.openConnection">
+            Ouverture de la connexion
+        </member>
+        <member name="M:SicilyAPP.DAL.ConnectionSql.reqExec(System.String)">
+            Fermeture de la connexion
+            Exécutiuon d'une requête
+        </member>
+        <member name="T:SicilyAPP.Modele.Liaison">
+            <summary>
+            class Liaison
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Modele.Liaison.Id">
+            <summary>
+            get-set id
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Modele.Liaison.Duree">
+            <summary>
+            get-set Duree
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Modele.Liaison.Port_depart_id">
+            <summary>
+            get-set Port_depart_id
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Modele.Liaison.Port_arrivee_id">
+            <summary>
+            get-set Port_arrivee_id
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Modele.Liaison.Nom_port_arrivee">
+            <summary>
+            get-set Nom_port_arrivee
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Modele.Liaison.Nom_port_depart">
+            <summary>
+            get-set Nom_port_depart
+            </summary>
+        </member>
+        <member name="M:SicilyAPP.Modele.Liaison.#ctor(System.Int32,System.TimeSpan,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            class liaison surcharger
+            </summary>
+            <param name="id"></param>
+            <param name="duree"></param>
+            <param name="port_depart_id"></param>
+            <param name="port_arrivee_id"></param>
+            <param name="nomA"></param>
+            <param name="nomD"></param>
+        </member>
+        <member name="M:SicilyAPP.Modele.Liaison.#ctor">
+            <summary>
+            class liaison initialisé
+            </summary>
+        </member>
+        <member name="M:SicilyAPP.Modele.Liaison.ToString">
+            <summary>
+            toString liaison
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SicilyAPP.Modele.Liaison.setDuree(System.TimeSpan)">
+            <summary>
+            setDuree
+            </summary>
+            <param name="heure"></param>
+        </member>
+        <member name="T:SicilyAPP.Modele.Tarifer">
+            <summary>
+            class tarifer
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Modele.Tarifer.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Modele.Tarifer.Type_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Modele.Tarifer.Periode_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Modele.Tarifer.Liaison_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Modele.Tarifer.Tarif">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Modele.Tarifer.Type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Modele.Tarifer.DateDebut">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Modele.Tarifer.DateFin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SicilyAPP.Modele.Tarifer.#ctor(System.Int32,System.Int32,System.String,System.Int32,System.DateTime,System.DateTime,System.Int32,System.Double)">
+            <summary>
+            class tarifer surcharger
+            </summary>
+            <param name="id"></param>
+            <param name="type_id"></param>
+            <param name="type"></param>
+            <param name="periode_id"></param>
+            <param name="dateDebut"></param>
+            <param name="dateFin"></param>
+            <param name="liaison_id"></param>
+            <param name="tarif"></param>
+        </member>
+        <member name="M:SicilyAPP.Modele.Tarifer.#ctor">
+            <summary>
+            class tarifer initialisé
+            </summary>
+        </member>
+        <member name="M:SicilyAPP.Modele.Tarifer.ToString">
+            <summary>
+            Tostring de tarifer
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SicilyAPP.Modele.Tarifer.setTarif(System.Double)">
+            <summary>
+            set Tarif
+            </summary>
+            <param name="tarif"></param>
+        </member>
+        <member name="T:SicilyAPP.Form1">
+            <summary>
+            class Form1 designer
+            </summary>
+        </member>
+        <member name="F:SicilyAPP.Form1.lstT">
+            <summary>
+            liste de tarifer
+            </summary>
+        </member>
+        <member name="F:SicilyAPP.Form1.lstL">
+            <summary>
+            liste de liaison
+            </summary>
+        </member>
+        <member name="M:SicilyAPP.Form1.#ctor">
+            <summary>
+            public form1
+            </summary>
+        </member>
+        <member name="F:SicilyAPP.Form1.components">
+            <summary>
+            Variable nécessaire au concepteur.
+            </summary>
+        </member>
+        <member name="M:SicilyAPP.Form1.Dispose(System.Boolean)">
+            <summary>
+            Nettoyage des ressources utilisées.
+            </summary>
+            <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        </member>
+        <member name="M:SicilyAPP.Form1.InitializeComponent">
+            <summary>
+            Méthode requise pour la prise en charge du concepteur - ne modifiez pas
+            le contenu de cette méthode avec l'éditeur de code.
+            </summary>
+        </member>
+        <member name="M:SicilyAPP.Program.Main">
+            <summary>
+            Point d'entrée principal de l'application.
+            </summary>
+        </member>
+        <member name="T:SicilyAPP.Vue.Tarif">
+            <summary>
+            class tarif 
+            </summary>
+        </member>
+        <member name="F:SicilyAPP.Vue.Tarif.lstT">
+            <summary>
+            liste de tarifer
+            </summary>
+        </member>
+        <member name="F:SicilyAPP.Vue.Tarif.lstL">
+            <summary>
+            liste de Liaison
+            </summary>
+        </member>
+        <member name="M:SicilyAPP.Vue.Tarif.#ctor(SicilyAPP.Modele.Liaison)">
+            <summary>
+            class tarif avec une liaison en paramètre
+            </summary>
+            <param name="uneLiaison"></param>
+        </member>
+        <member name="F:SicilyAPP.Vue.Tarif.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SicilyAPP.Vue.Tarif.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SicilyAPP.Vue.Tarif.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:SicilyAPP.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:SicilyAPP.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Rechercher{% endblock %}
+
+{% block content %}
+
+
+<div class="container bg-light border rounded mt-5">
+    <br>
+    <div class="row pt m-1">
+
+        <div class="col-md-3">
+            <label>Port de départ :</label>
+            <select required>
+            {% for ports in portDepart %}
+            <option>{{ports.name}}</option>
+            {% endfor %}
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <label>Port d'arrivée :</label>
+            <select required>
+            {% for ports in portDepart %}
+            <option>{{ports.name}}</option>
+            {% endfor %}
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <label>Date :</label>
+            <input type="date" required>
+        </div>
+    </div>
+    <div class="row pt m-1">
+        <br>
+        <div class="col-md-3">
+            <label>Nombre de passagers :</label>
+            <input type="number" placeholder="Nombre de passagers" required>
+        </div>
+
+        <div class="col-md-3">
+            <label>Véhicule :</label>
+            <input type="" placeholder="" required>
+        </div>
+
+        <div class="col-md-3">
+            <label>Aller-Retour :</label>
+            <input type="" placeholder="" required>
+        </div>
+
+    </div>
+    <div class="row pt m-1">
+
+        <div class="col-md-4">
+            <label>Heure :</label>
+            <input type=  placeholder="" required>
+        </div>
+        <div class="col-md-4">
+            <label>Type de passagers :</label>
+            <select required>
+            <option></option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label>Type de véhicules :</label>
+            <select required>
+            <option></option>
+            </select>
+        </div>
+        
+    </div>
+    <div class="row pt m-1">
+
+        <div class="col-md-6">
+            <label>Date de retour :</label>
+            <!--<input type="date"  placeholder="">-->
+            <select required>
+            <option></option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label>Heure de retour :</label>
+            <select required>
+            <option></option>
+            </select>
+        </div>
+        
+    </div><br>
+    <center><input type="submit" value="Rechercher" min="1" required></center>
+    <br>
+</div>
+{% endblock %}

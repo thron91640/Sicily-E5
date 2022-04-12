@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sicily Lines - à propos{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href={{ asset('assets/style/css/proposStyle.css')}}/>
+{% endblock %}
+
+
+{% block content %}
+
+<section class="propos">
+    <div class="textPannel">
+        <h1>À propos de nous</h1>
+        <br>
+        <p>
+            La compagnie Sicily Lines est une compagnie maritime privée implantée sur l’ensemble de
+            la côte Italienne. Anciennement connue sous le nom de Ustica Lines, la compagnie a
+            commencé son activité en effectuant des liaisons rapides entre Naples et la Sicile et entre la
+            Sicile et la Tunisie.
+        </p>
+        <p>
+            En quelques années, Sicily Lines a développé de nouvelles traversées entre Naples et
+            plusieurs îles de la mer Tyrrhénienne et s’est dotée de nouveaux moyens pour intensifier les
+            départs. Grâce à ses 30 ferries à grande vitesse de type catamarans et hydrofoils et une équipe de plus de 600 personnes à son actif, Sicily Lines est devenue
+            la plus grande entreprise du secteur du transport rapide de passagers. Plus d'un million et
+            demi de passagers profitent de la qualité de ses services chaque année.
+        </p>
+    </div>
+</section>
+
+
+{% endblock %}
